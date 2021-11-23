@@ -4,6 +4,8 @@ import org.springframework.dao.DataIntegrityViolationException
 
 class AlbumController {
 
+    static scaffold = true
+
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
