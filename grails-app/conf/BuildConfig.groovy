@@ -31,6 +31,8 @@ grails.project.dependency.resolution = {
         mavenLocal()
         mavenCentral()
 
+        mavenRepo "https://repo1.maven.org/maven2/"
+
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
@@ -43,7 +45,7 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.22'
 
-        // runtime('org.postgresql:postgresql:42.2.5.jre7')
+        runtime('org.postgresql:postgresql:42.2.5.jre7')
     }
 
     plugins {
