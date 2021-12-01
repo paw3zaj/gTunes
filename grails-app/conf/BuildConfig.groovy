@@ -45,7 +45,7 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.22'
 
-        runtime('org.postgresql:postgresql:42.2.5.jre7')
+        // runtime('org.postgresql:postgresql:42.2.5.jre7')
     }
 
     plugins {

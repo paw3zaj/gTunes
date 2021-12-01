@@ -1,8 +1,11 @@
 dataSource {
     pooled = true
-    driverClassName = "org.postgresql.Driver"
-    username = 'pawel'
-    password = 'pass'
+    driverClassName = "org.h2.Driver"
+    username = 'sa'
+    password = ''
+    // driverClassName = "org.postgresql.Driver"
+    // username = 'pawel'
+    // password = 'pass'
      properties {
         initialSize = 34
         maxActive = 150
@@ -30,8 +33,10 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update"
-            url = "jdbc:postgresql://localhost:5432/gTunes"
+            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            // dbCreate = "update"
+            // url = "jdbc:postgresql://localhost:5432/gTunes"
         }
     }
     test {
